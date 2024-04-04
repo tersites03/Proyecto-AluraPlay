@@ -9,6 +9,28 @@
 .cabecera__buscar__item{
     display: none;
 }
+
+/* Sección aside-menu que esta al costado izquierdo de la pantalla */
+.menu__container{
+    position: fixed;
+    bottom: 0%;
+    height: 75px;
+    width: 100%;
+}
+/* Menu, lista de elelemntos */
+.menu__lista{
+    display: flex;
+    justify-content: space-around;
+    height: 100%;
+}
+.menu__lista li{
+    align-self: center;
+}
+.menu__lista:nth-child(2),.menu__lista:nth-child(3),.menu__lista:nth-child(4){
+    display:none;
+
+}
+
 /* Sección superior*/
 .superior__seccion__container{
     display: flex;
