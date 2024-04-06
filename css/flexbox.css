@@ -58,7 +58,7 @@
 }
 
 /* media queries para diseños responsive*/
-@media (min-width:834px) {
+@media (max-width:834px) {
     /* cabecera */
     .cabecera__buscar__item{
         display: block;
@@ -69,21 +69,16 @@
     }
     /* menu contenedor de las listas*/
     .menu__container{
-        display:flex;
-        top: 10em;
-        position: fixed;
-        bottom: 0%;
-        height: 100%;
-        width: 6em;
-        padding-right: 5px;
+        top: 80px;    
+        height: auto;
+        width: 78px;
     }
     .menu__lista{ 
-        float: left;
-        width: 100%;
-        height: 100%;
         display: flex;
-        justify-content: space-around;
+        padding: 15px;
+        justify-content: flex-start;
         flex-direction: column;
+        gap: 33px;
     }
 
 }
