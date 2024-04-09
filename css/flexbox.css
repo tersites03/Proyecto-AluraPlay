@@ -51,14 +51,17 @@
 /* footer */
 .rodapie__container{
     display: flex;
-    /*flex-direction: column;
-    flex-wrap: wrap;*/
+/* flex-flow, es igual a la combinación de flex-direction: column;
+flex-wrap: wrap;*/
+
     flex-flow: column wrap;
 
 }
 
-/* media queries para diseños responsive*/
-@media (max-width:834px) {
+/* Diseño Responsivo
+media queries para pantallas desde moviles a tablets*/
+
+@media (min-width:834px) {
     /* cabecera */
     .cabecera__buscar__item{
         display: block;
@@ -83,7 +86,10 @@
     }
 
 }
-@media(max-width:1440px){
+
+/* responsive para pantallas desde monitores a tv pequeñas*/
+
+@media(min-width:1440px){ 
     .menu__container{
         width: 239px;
         overflow: scroll;        
@@ -93,5 +99,17 @@
     }
     .menu__lista{
         height: auto;
+        padding:20px 17px 20px 15px;
+        gap:15px;
     }
+    .menu__itens{
+/* coloca los elementos flex en linea horizontal*/
+        flex-direction: row;
+/* espacio entre los elementos de un contenedor*/
+        gap: 15px;
+/* alinea los elementos horizontalmente*/
+        align-items: center;
+
+    }
+
 }
