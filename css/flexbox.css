@@ -48,6 +48,15 @@
 
 }
 
+/* Sección de Videos */
+.videos__item{
+    height: 303px;
+    width: 280px;
+}
+
+
+
+
 /* footer */
 .rodapie__container{
     display: flex;
