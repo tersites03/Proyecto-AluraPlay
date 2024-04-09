@@ -94,22 +94,39 @@ media queries para pantallas desde moviles a tablets*/
         width: 239px;
         overflow: scroll;        
     }
-    .menu__lista:nth-child(2),.menu__lista:nth-child(3),.menu__lista:nth-child(4){
+    .menu__lista:nth-child(2),
+    .menu__lista:nth-child(3),
+    .menu__lista:nth-child(4){
         display:flex;
     }
     .menu__lista{
         height: auto;
         padding:20px 17px 20px 15px;
         gap:15px;
-    }
+
+    .menu__lista:nth-child(3){
+            flex-direction: column-reverse;
+        }
+    
     .menu__itens{
-/* coloca los elementos flex en linea horizontal*/
         flex-direction: row;
-/* espacio entre los elementos de un contenedor*/
         gap: 15px;
-/* alinea los elementos horizontalmente*/
         align-items: center;
+        
+    }
+    .videojuegos{
+        order: 3;        
+    }
+    .peliculas {
+        order: 2; 
 
     }
+    .premium{
+        order: 1; 
+    }
+    
+    
+    
+}
 
 }
